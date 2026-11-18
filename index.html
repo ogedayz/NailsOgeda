@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Juliana Ogeda Nail Designer - Ateliê de alta estética ungueal, alongamentos em fibra de vidro, nail art e biossegurança hospitalar.">
+  <meta name="keywords" content="Nail Designer, Fibra de Vidro, Alongamento em Gel, Juliana Ogeda, Manicure">
+  <meta name="author" content="Juliana Ogeda">
+  <title>Juliana Ogeda | Nail Designer &amp; Alta Estética Ungueal</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       CABEÇALHO E NAVEGAÇÃO COM SUBMENU (LISTA ENCADEADA)
+       ===================================================================== -->
+  <header class="header" id="topo">
+    <div class="container header-container">
+      <a href="#inicio" class="logo" aria-label="Juliana Ogeda Início">
+        <span class="logo-icon">✧</span>
+        <div class="logo-text">
+          <span class="logo-title">Juliana Ogeda</span>
+          <span class="logo-subtitle">NAIL DESIGNER &amp; ESTÉTICA</span>
+        </div>
+      </a>
+
+      <nav class="nav-principal" aria-label="Menu Principal">
+        <ul class="menu-lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li class="has-submenu">
+            <a href="#servicos">Procedimentos ▾</a>
+            <!-- Lista encadeada para submenu funcional -->
+            <ul class="submenu">
+              <li><a href="#servicos">Fibra de Vidro</a></li>
+              <li><a href="#servicos">Esmaltação em Gel</a></li>
+              <li><a href="#servicos">Nail Art Exclusiva</a></li>
+              <li><a href="#tabela-precos">Tabela de Valores</a></li>
+            </ul>
+          </li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#agendamento">Agendar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#agendamento" class="btn-rosa-destaque">Agendar Horário ✨</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         1. SLIDER BANNER - EFEITO CARROSSEL (HERO SECTION)
+         ===================================================================== -->
+    <section id="inicio" class="hero-slider" aria-label="Destaques do Ateliê">
+      <div class="slides-container" id="slidesContainer">
+        
+        <!-- Slide 1 -->
+        <article class="slide active" style="background-image: linear-gradient(rgba(255, 245, 247, 0.85), rgba(252, 231, 243, 0.88)), url('https://images.pexels.com/photos/3997385/pexels-photo-3997385.jpeg?auto=compress&cs=tinysrgb&w=1400');">
+          <div class="container slide-grid">
+            <div class="slide-texto">
+              <span class="badge-rosa">✨ ATELIÊ DE ALTA MANICURE &amp; ESTÉTICA</span>
+              <h1>Sua autoestima refletida em cada detalhe das suas mãos</h1>
+              <p>Especialista em alongamentos em <strong>fibra de vidro</strong>, blindagem e <em>nail arts</em> artesanais exclusivas com rigoroso padrão de biossegurança hospitalar.</p>
+              <div class="slide-botoes">
+                <a href="#agendamento" class="btn-rosa-destaque btn-lg">Agendar Atendimento ↗</a>
+                <button type="button" id="btnDownloadCatalogo" class="btn-outline-rosa">📄 Baixar Catálogo PDF</button>
+              </div>
+            </div>
+            <div class="slide-imagem">
+              <img src="https://images.pexels.com/photos/3997385/pexels-photo-3997385.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Alongamento de unhas delicado em tom rosa claro feito por Juliana Ogeda">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="slide" style="background-image: linear-gradient(rgba(255, 245, 247, 0.88), rgba(253, 242, 248, 0.9)), url('https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=1400');">
+          <div class="container slide-grid">
+            <div class="slide-texto">
+              <span class="badge-rosa">💎 TECNOLOGIA &amp; NATURALIDADE</span>
+              <h2>Curvatura anatômica perfeita e resistência extrema</h2>
+              <p>Utilizamos géis europeus hipoalergênicos que preservam a saúde da sua lâmina ungueal natural com acabamento ultrafino.</p>
+              <div class="slide-botoes">
+                <a href="#servicos" class="btn-rosa-destaque btn-lg">Conhecer Técnicas ↓</a>
+                <a href="#galeria" class="btn-outline-rosa">Ver Portfólio</a>
+              </div>
+            </div>
+            <div class="slide-imagem">
+              <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nail art encapsulada sofisticada com detalhes delicados">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="slide" style="background-image: linear-gradient(rgba(255, 245, 247, 0.88), rgba(252, 231, 243, 0.9)), url('https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=1400');">
+          <div class="container slide-grid">
+            <div class="slide-texto">
+              <span class="badge-rosa">🛡️ 100% AUTOCLAVE HOSPITALAR</span>
+              <h2>Seu momento VIP de autocuidado e bem-estar</h2>
+              <p>Ambiente climatizado, poltronas ergonômicas e kits 100% descartáveis para uma experiência tranquila e segura.</p>
+              <div class="slide-botoes">
+                <a href="#localizacao" class="btn-rosa-destaque btn-lg">Como Chegar (Maps) 📍</a>
+                <a href="#sobre" class="btn-outline-rosa">Nossa História</a>
+              </div>
+            </div>
+            <div class="slide-imagem">
+              <img src="https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Juliana Ogeda realizando atendimento personalizado no estúdio">
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Controles do Carrossel -->
+      <button type="button" class="slider-btn prev" id="prevSlide" aria-label="Slide Anterior">&#10094;</button>
+      <button type="button" class="slider-btn next" id="nextSlide" aria-label="Próximo Slide">&#10095;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- =====================================================================
+         2. SOBRE A ESPECIALISTA, LISTAS VARIADAS E VÍDEO MULTIMÍDIA
+         ===================================================================== -->
+    <section id="sobre" class="section section-blush">
+      <div class="container about-grid">
+        <article class="about-media">
+          <img src="https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Master Nail Designer Juliana Ogeda trabalhando no ateliê" class="img-destaque">
+          
+          <!-- Elemento <video> incorporado conforme checklist -->
+          <div class="video-box">
+            <h3>🎥 Bastidores do Ateliê</h3>
+            <video controls poster="https://images.pexels.com/photos/887352/pexels-photo-887352.jpeg?auto=compress&cs=tinysrgb&w=600">
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-getting-her-nails-done-at-a-salon-40359-large.mp4" type="video/mp4">
+              Seu navegador não suporta a reprodução de vídeos HTML5.
+            </video>
+          </div>
+        </article>
+
+        <article class="about-content">
+          <span class="subtitulo-secao">TRAJETÓRIA &amp; EXCELÊNCIA</span>
+          <h2>Arte, Cuidado &amp; Biossegurança Impecável</h2>
+          <p>Com mais de cinco anos dedicados à lapidação técnica e estética das unhas, <strong>Juliana Ogeda</strong> une o rigor da esterilização cirúrgica em autoclave à sensibilidade artística da alta joalheria aplicada às mãos.</p>
+          <p>Localizado na <em>Av. das Américas, 4200 — Lounge 104 / Estúdio 302</em>, o espaço foi projetado para oferecer conforto absoluto e pontualidade rigorosa.</p>
+
+          <!-- Lista Ordenada (<ol>) -->
+          <div class="listas-container">
+            <div class="lista-card">
+              <h4>Etapas do Nosso Ritual (Lista Ordenada):</h4>
+              <ol class="lista-ordenada">
+                <li><strong>Anamnese Ungueal:</strong> Avaliação da saúde e formato da lâmina.</li>
+                <li><strong>Preparação Segura:</strong> Higienização com produtos atóxicos e cuticulagem combinada.</li>
+                <li><strong>Arquitetura &amp; Design:</strong> Aplicação milimétrica da fibra ou gel.</li>
+                <li><strong>Finalização SPA:</strong> Hidratação profunda com óleos essenciais.</li>
+              </ol>
+            </div>
+
+            <!-- Lista de Definição (<dl>) -->
+            <div class="lista-card">
+              <h4>Glossário de Biossegurança (Lista de Definição):</h4>
+              <dl class="lista-definicao">
+                <dt>Autoclave Hospitalar</dt>
+                <dd>Equipamento de esterilização a vapor sob pressão que elimina 100% dos micro-organismos.</dd>
+                <dt>Géis Hipoalergênicos (HEMA-Free)</dt>
+                <dd>Fórmulas livres de monômeros irritantes, ideais para peles sensíveis.</dd>
+              </dl>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         3. FLIP CARDS 3D - PROCEDIMENTOS EXCLUSIVOS
+         ===================================================================== -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <header class="section-header center">
+          <span class="subtitulo-secao">INTERATIVIDADE &amp; TÉCNICA</span>
+          <h2>Menu de Procedimentos (Flip Cards 3D)</h2>
+          <p>Passe o mouse ou toque sobre os cartões abaixo para descobrir os detalhes técnicos, duração e valores de cada procedimento.</p>
+        </header>
+
+        <div class="flip-grid">
+          <!-- Flip Card 1 -->
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://images.pexels.com/photos/887352/pexels-photo-887352.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alongamento em Fibra de Vidro">
+                <div class="flip-front-info">
+                  <span class="card-badge">MAIS PEDIDO</span>
+                  <h3>💎 Fibra de Vidro</h3>
+                  <p>Passe o mouse para ver detalhes ↻</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3>Fibra de Vidro</h3>
+                <p>Extensão estruturada com filamentos de vidro ultrafinos. Proporciona resistência superior e curvatura C perfeitamente natural.</p>
+                <ul class="back-specs">
+                  <li>⏱️ Duração: 120 min</li>
+                  <li>🔄 Manutenção: A cada 21 dias</li>
+                  <li>💰 Investimento: <strong>R$ 220,00</strong></li>
+                </ul>
+                <a href="#agendamento" class="btn-branco">Agendar Técnica</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Flip Card 2 -->
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Esmaltação em Gel">
+                <div class="flip-front-info">
+                  <span class="card-badge">BRILHO ESPELHADO</span>
+                  <h3>✨ Esmaltação em Gel</h3>
+                  <p>Passe o mouse para ver detalhes ↻</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3>Esmaltação em Gel</h3>
+                <p>Aplicação de esmalte fotopolimerizável sobre unhas naturais. Secagem instantânea em cabine LED e brilho intacto por até 25 dias.</p>
+                <ul class="back-specs">
+                  <li>⏱️ Duração: 75 min</li>
+                  <li>🛡️ Zero descascados</li>
+                  <li>💰 Investimento: <strong>R$ 130,00</strong></li>
+                </ul>
+                <a href="#agendamento" class="btn-branco">Agendar Técnica</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Flip Card 3 -->
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nail Art Exclusiva Encapsulada">
+                <div class="flip-front-info">
+                  <span class="card-badge">ARTE AUTORAL</span>
+                  <h3>🎨 Nail Art Exclusiva</h3>
+                  <p>Passe o mouse para ver detalhes ↻</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3>Nail Art Exclusiva</h3>
+                <p>Decorações artesanais feitas à mão: encapsulamento com folha de ouro 24k, francesinha reversa, baby boomer e pedrarias.</p>
+                <ul class="back-specs">
+                  <li>⏱️ Duração: 90 min</li>
+                  <li>✨ Design 100% personalizado</li>
+                  <li>💰 Investimento: <strong>R$ 180,00</strong></li>
+                </ul>
+                <a href="#agendamento" class="btn-branco">Agendar Técnica</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Flip Card 4 -->
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://images.pexels.com/photos/3997383/pexels-photo-3997383.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spa dos Pés e Blindagem">
+                <div class="flip-front-info">
+                  <span class="card-badge">RELAXAMENTO</span>
+                  <h3>🌸 Spa dos Pés</h3>
+                  <p>Passe o mouse para ver detalhes ↻</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3>Spa dos Pés</h3>
+                <p>Protocolo de renovação celular com esfoliação aromática, hidratação profunda com parafina fria e massagem relaxante podal.</p>
+                <ul class="back-specs">
+                  <li>⏱️ Duração: 60 min</li>
+                  <li>🌿 Óleos essenciais puros</li>
+                  <li>💰 Investimento: <strong>R$ 110,00</strong></li>
+                </ul>
+                <a href="#agendamento" class="btn-branco">Agendar Técnica</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- =====================================================================
+             4. TABELA ESTRUTURADA (THEAD, TBODY, ROWSPAN E COLSPAN)
+             ===================================================================== -->
+        <div id="tabela-precos" class="tabela-wrapper">
+          <h3>Tabela Completa de Procedimentos &amp; Manutenções</h3>
+          <table class="tabela-precos">
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Procedimento</th>
+                <th>Tempo Médio</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="celula-destaque"><strong>Alongamentos</strong></td>
+                <td>Aplicação Fibra de Vidro (Primeira vez)</td>
+                <td>120 min</td>
+                <td>R$ 220,00</td>
+              </tr>
+              <tr>
+                <td>Manutenção Fibra de Vidro (Até 25 dias)</td>
+                <td>90 min</td>
+                <td>R$ 150,00</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="celula-destaque"><strong>Unhas Naturais</strong></td>
+                <td>Blindagem de Diamante + Esmaltação em Gel</td>
+                <td>75 min</td>
+                <td>R$ 130,00</td>
+              </tr>
+              <tr>
+                <td>Remoção Segura + Hidratação com Queratinização</td>
+                <td>45 min</td>
+                <td>R$ 70,00</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="celula-combo"><strong>✨ Combo VIP: Fibra de Vidro + Nail Art Encapsulada + Spa dos Pés</strong></td>
+                <td class="celula-combo-valor"><strong>R$ 360,00</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. GALERIA LIGHTBOX 100% CSS (:TARGET)
+         ===================================================================== -->
+    <section id="galeria" class="section section-blush">
+      <div class="container">
+        <header class="section-header center">
+          <span class="subtitulo-secao">PORTFÓLIO DE CRIAÇÕES</span>
+          <h2>Galeria Lightbox Exclusiva</h2>
+          <p>Clique em qualquer foto para ampliar em tela cheia com efeito desfoque.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <a href="#lightbox-1">
+              <img src="https://images.pexels.com/photos/887352/pexels-photo-887352.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alongamento Amendoado Nude Rosado">
+              <span class="zoom-icon">🔍 Ampliar</span>
+            </a>
+            <figcaption><strong>Alongamento Amendoado Nude</strong> — Fibra de Vidro</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <a href="#lightbox-2">
+              <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Encapsulada com Folha de Ouro 24k">
+              <span class="zoom-icon">🔍 Ampliar</span>
+            </a>
+            <figcaption><strong>Encapsulada Folha de Ouro</strong> — Nail Art</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <a href="#lightbox-3">
+              <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Esmaltação em Gel Vermelho Clássico">
+              <span class="zoom-icon">🔍 Ampliar</span>
+            </a>
+            <figcaption><strong>Esmaltação Gel Clássica</strong> — Brilho Espelhado</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <a href="#lightbox-4">
+              <img src="https://images.pexels.com/photos/3997383/pexels-photo-3997383.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Micro French Delicada">
+              <span class="zoom-icon">🔍 Ampliar</span>
+            </a>
+            <figcaption><strong>Luxury Micro French</strong> — Traço Fino</figcaption>
+          </figure>
+        </div>
+
+        <div class="instagram-cta">
+          <p>📸 Acompanhe novidades diárias no Instagram oficial do estúdio:</p>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn-rosa-destaque">@julianaogeda.nails ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modais Lightbox 100% CSS -->
+    <div class="lightbox" id="lightbox-1">
+      <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+      <div class="lightbox-content">
+        <a href="#galeria" class="close-btn">&times;</a>
+        <img src="https://images.pexels.com/photos/887352/pexels-photo-887352.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Alongamento Amendoado Nude Ampliado">
+        <p class="lightbox-caption">Alongamento Amendoado Nude — Estrutura em Fibra de Vidro</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox-2">
+      <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+      <div class="lightbox-content">
+        <a href="#galeria" class="close-btn">&times;</a>
+        <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Encapsulada Folha de Ouro Ampliada">
+        <p class="lightbox-caption">Encapsulada com Folha de Ouro 24k — Nail Art Artesanal</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox-3">
+      <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+      <div class="lightbox-content">
+        <a href="#galeria" class="close-btn">&times;</a>
+        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Esmaltação Gel Clássica Ampliada">
+        <p class="lightbox-caption">Esmaltação em Gel — Durabilidade de até 25 dias</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox-4">
+      <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+      <div class="lightbox-content">
+        <a href="#galeria" class="close-btn">&times;</a>
+        <img src="https://images.pexels.com/photos/3997383/pexels-photo-3997383.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luxury Micro French Ampliada">
+        <p class="lightbox-caption">Luxury Micro French — Acabamento Natural Clean</p>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         6. FORMULÁRIO COMPLETO COM REGEX + LOCALIZAÇÃO GOOGLE MAPS
+         ===================================================================== -->
+    <section id="agendamento" class="section">
+      <div class="container booking-grid">
+        
+        <!-- Formulário com todos os controles e Regex exigidos -->
+        <div class="form-card">
+          <span class="subtitulo-secao">RESERVA ONLINE</span>
+          <h2>Solicite seu Horário Exclusivo</h2>
+          <p>Preencha todos os campos obrigatórios. Ao confirmar, você será redirecionada para o atendimento VIP da Juliana Ogeda.</p>
+
+          <form action="#agendamento" method="POST" id="formAgendamento" class="form-completo">
+            
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" minlength="3" maxlength="80" placeholder="Ex.: Maria Clara Silva" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">WhatsApp (com DDD) *</label>
+                <input type="tel" id="telefone" name="telefone" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" placeholder="(11) 99999-9999" title="Digite um telefone válido com DDD, ex: (11) 99999-9999" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cpf">CPF (para cadastro clínico) *</label>
+                <input type="text" id="cpf" name="cpf" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{11}$" placeholder="000.000.000-00" title="Digite um CPF válido no formato 000.000.000-00" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="cliente@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="data">Data Desejada *</label>
+                <input type="date" id="data" name="data" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servico">Procedimento Principal *</label>
+              <select id="servico" name="servico" required>
+                <option value="">Selecione uma opção...</option>
+                <option value="Fibra de Vidro (R$ 220,00)">Fibra de Vidro — R$ 220,00</option>
+                <option value="Manutenção Fibra (R$ 150,00)">Manutenção Fibra — R$ 150,00</option>
+                <option value="Esmaltação em Gel (R$ 130,00)">Esmaltação em Gel — R$ 130,00</option>
+                <option value="Nail Art Exclusiva (R$ 180,00)">Nail Art Exclusiva — R$ 180,00</option>
+                <option value="Spa dos Pés (R$ 110,00)">Spa dos Pés — R$ 110,00</option>
+                <option value="Combo VIP Completo (R$ 360,00)">Combo VIP Completo — R$ 360,00</option>
+              </select>
+            </div>
+
+            <!-- Escolha Única (Radio) -->
+            <div class="form-group">
+              <label>Período de Preferência:</label>
+              <div class="opcoes-inline">
+                <label><input type="radio" name="periodo" value="Manhã (09h às 12h)" checked> Manhã</label>
+                <label><input type="radio" name="periodo" value="Tarde (13h às 17h)"> Tarde</label>
+                <label><input type="radio" name="periodo" value="Final de Dia (17h às 19h)"> Final de Dia</label>
+              </div>
+            </div>
+
+            <!-- Escolha Múltipla (Checkbox) -->
+            <div class="form-group">
+              <label>Cuidados Extras (Opcional):</label>
+              <div class="opcoes-inline">
+                <label><input type="checkbox" name="extras" value="Remoção de alongamento anterior"> Remoção Anterior</label>
+                <label><input type="checkbox" name="extras" value="Alergia a produtos comuns"> Pele Sensível / Alergia</label>
+                <label><input type="checkbox" name="extras" value="Café Expresso Gourmet"> Café Expresso VIP</label>
+              </div>
+            </div>
+
+            <!-- Envio de Arquivo (File) -->
+            <div class="form-group">
+              <label for="referencia">Foto de Inspiração (Opcional - JPG/PNG):</label>
+              <input type="file" id="referencia" name="referencia" accept="image/*">
+            </div>
+
+            <!-- Campo Textarea -->
+            <div class="form-group">
+              <label for="observacoes">Observações ou Formato Preferido:</label>
+              <textarea id="observacoes" name="observacoes" rows="3" placeholder="Ex.: Gostaria de formato amendoado curto em tom rosa bebê..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-rosa-destaque btn-full">Confirmar Agendamento via WhatsApp 💬</button>
+          </form>
+        </div>
+
+        <!-- Localização e Redirecionamento Google Maps -->
+        <aside id="localizacao" class="location-card">
+          <span class="subtitulo-secao">ONDE ESTAMOS</span>
+          <h2>Espaço Exclusivo &amp; Conforto</h2>
+          <p>Venha viver uma experiência de beleza única no coração da Barra. Contamos com estacionamento com manobrista no local.</p>
+
+          <ul class="info-local-lista">
+            <li>
+              <span>📍</span>
+              <div>
+                <strong>Endereço do Ateliê:</strong>
+                <p>Av. das Américas, 4200 — Lounge 104 / Estúdio 302<br>Barra da Tijuca, Rio de Janeiro — RJ</p>
+              </div>
+            </li>
+            <li>
+              <span>🕒</span>
+              <div>
+                <strong>Horário de Atendimento:</strong>
+                <p>Segunda a Sábado: 09:00 às 19:00<br>Atendimento exclusivamente com hora marcada.</p>
+              </div>
+            </li>
+            <li>
+              <span>📱</span>
+              <div>
+                <strong>Contato Direto:</strong>
+                <p>atendimento@julianaogeda.nails</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Mapa Incorporado + Botão de Redirecionamento Direto para o Google Maps -->
+          <div class="mapa-container">
+            <iframe 
+              title="Mapa de localização Juliana Ogeda Nail Designer"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-43.3600%2C-23.0050%2C-43.3450%2C-22.9950&amp;layer=mapnik&amp;marker=-23.0000%2C-43.3525" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+das+Américas,+4200+-+Barra+da+Tijuca" target="_blank" rel="noopener noreferrer" class="btn-maps-redirect">
+            🗺️ Abrir Rota no Google Maps ↗
+          </a>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       RODAPÉ COMPLETO E DOCUMENTAÇÃO TÉCNICA (FASE 4 DER & DICIONÁRIO)
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <span class="logo-title-footer">✧ Juliana Ogeda</span>
+        <p>Ateliê de alta estética ungueal, alongamentos em fibra de vidro e nail art autoral com biossegurança hospitalar.</p>
+        <p class="copy">© 2026 Juliana Ogeda Nail Designer. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Juliana Ogeda</a></li>
+          <li><a href="#servicos">Procedimentos 3D</a></li>
+          <li><a href="#galeria">Galeria Lightbox</a></li>
+          <li><a href="politica.html">Política de Privacidade (Local)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes &amp; Documentação</h4>
+        <ul>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial ↗</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Av.+das+Américas,+4200" target="_blank" rel="noopener noreferrer">Google Maps ↗</a></li>
+          <li><button type="button" id="btnToggleDocs" class="btn-docs-toggle">📊 Ver DER &amp; Dicionário de Dados (Fase 4)</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Painel Expansível com DER e Dicionário de Dados (Fase 4 do Checklist) -->
+    <div class="container">
+      <div id="painelDocumentacao" class="painel-docs oculto">
+        <h3>📐 Modelagem de Dados &amp; Dicionário (Fase 4)</h3>
+        <p><strong>Relacionamentos (DER):</strong> <code>CLIENTE (1) ────&lt; (N) AGENDAMENTO (N) &gt;──── (1) PROCEDIMENTO</code></p>
+        <table class="tabela-precos tabela-der">
+          <thead>
+            <tr>
+              <th>Tabela</th>
+              <th>Campo</th>
+              <th>Tipo</th>
+              <th>Chave / Restrição</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3"><strong>CLIENTE</strong></td>
+              <td>id_cliente</td>
+              <td>INT</td>
+              <td>PK, AUTO_INCREMENT</td>
+              <td>Identificador único da cliente</td>
+            </tr>
+            <tr>
+              <td>cpf</td>
+              <td>VARCHAR(14)</td>
+              <td>UNIQUE, NOT NULL</td>
+              <td>CPF validado via Regex</td>
+            </tr>
+            <tr>
+              <td>nome_completo</td>
+              <td>VARCHAR(80)</td>
+              <td>NOT NULL</td>
+              <td>Nome completo da cliente</td>
+            </tr>
+            <tr>
+              <td rowspan="4"><strong>AGENDAMENTO</strong></td>
+              <td>id_agendamento</td>
+              <td>INT</td>
+              <td>PK, AUTO_INCREMENT</td>
+              <td>Identificador único da reserva</td>
+            </tr>
+            <tr>
+              <td>id_cliente</td>
+              <td>INT</td>
+              <td>FK (CLIENTE)</td>
+              <td>Chave estrangeira da cliente</td>
+            </tr>
+            <tr>
+              <td>data_agendada</td>
+              <td>DATE</td>
+              <td>NOT NULL</td>
+              <td>Data escolhida para o atendimento</td>
+            </tr>
+            <tr>
+              <td>status</td>
+              <td>VARCHAR(20)</td>
+              <td>DEFAULT 'Pendente'</td>
+              <td>Status do agendamento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       CHATBOT VIRTUAL INTERATIVO (ASSISTENTE JULIANA NAILS)
+       ===================================================================== -->
+  <div class="chatbot-widget" id="chatbotWidget">
+    <button type="button" class="chatbot-toggle" id="chatbotToggle" aria-label="Abrir Assistente Virtual">
+      💬 <span class="chat-badge">Online</span>
+    </button>
+
+    <div class="chatbot-window oculto" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div>
+          <strong>Assistente Juliana Nails ✨</strong>
+          <small>Responde na hora</small>
+        </div>
+        <button type="button" id="chatbotClose" aria-label="Fechar Chat">&times;</button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="msg bot">
+          Olá! 🌸 Seja bem-vinda ao ateliê <strong>Juliana Ogeda Nail Designer</strong>. Como posso te ajudar hoje?
+        </div>
+      </div>
+
+      <div class="chatbot-quick-replies">
+        <button type="button" class="quick-btn" data-pergunta="valores">💰 Valores</button>
+        <button type="button" class="quick-btn" data-pergunta="endereco">📍 Endereço</button>
+        <button type="button" class="quick-btn" data-pergunta="horarios">🕒 Horários</button>
+        <button type="button" class="quick-btn" data-pergunta="agendar">📅 Agendar</button>
+      </div>
+
+      <form class="chatbot-input-area" id="chatbotForm">
+        <input type="text" id="chatbotInput" placeholder="Digite sua dúvida..." autocomplete="off" required>
+        <button type="submit">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       BANNER DE COOKIES LGPD (FUNCIONAL COM LOCALSTORAGE)
+       ===================================================================== -->
+  <div id="bannerCookies" class="banner-cookies" role="region" aria-label="Aviso de Cookies">
+    <p>🍪 Utilizamos cookies essenciais para melhorar sua experiência e salvar suas preferências no ateliê <strong>Juliana Ogeda</strong>.</p>
+    <div class="cookies-botoes">
+      <button type="button" id="btnAceitarCookies" class="btn-aceitar">Entendi e Aceito</button>
+      <button type="button" id="btnRecusarCookies" class="btn-recusar">Apenas Essenciais</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
