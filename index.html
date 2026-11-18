@@ -592,76 +592,9 @@
         <ul>
           <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial ↗</a></li>
           <li><a href="https://www.google.com/maps/search/?api=1&query=Av.+das+Américas,+4200" target="_blank" rel="noopener noreferrer">Google Maps ↗</a></li>
-          <li><button type="button" id="btnToggleDocs" class="btn-docs-toggle">📊 Ver DER &amp; Dicionário de Dados (Fase 4)</button></li>
         </ul>
       </div>
     </div>
-
-    <!-- Painel Expansível com DER e Dicionário de Dados (Fase 4 do Checklist) -->
-    <div class="container">
-      <div id="painelDocumentacao" class="painel-docs oculto">
-        <h3>📐 Modelagem de Dados &amp; Dicionário (Fase 4)</h3>
-        <p><strong>Relacionamentos (DER):</strong> <code>CLIENTE (1) ────&lt; (N) AGENDAMENTO (N) &gt;──── (1) PROCEDIMENTO</code></p>
-        <table class="tabela-precos tabela-der">
-          <thead>
-            <tr>
-              <th>Tabela</th>
-              <th>Campo</th>
-              <th>Tipo</th>
-              <th>Chave / Restrição</th>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="3"><strong>CLIENTE</strong></td>
-              <td>id_cliente</td>
-              <td>INT</td>
-              <td>PK, AUTO_INCREMENT</td>
-              <td>Identificador único da cliente</td>
-            </tr>
-            <tr>
-              <td>cpf</td>
-              <td>VARCHAR(14)</td>
-              <td>UNIQUE, NOT NULL</td>
-              <td>CPF validado via Regex</td>
-            </tr>
-            <tr>
-              <td>nome_completo</td>
-              <td>VARCHAR(80)</td>
-              <td>NOT NULL</td>
-              <td>Nome completo da cliente</td>
-            </tr>
-            <tr>
-              <td rowspan="4"><strong>AGENDAMENTO</strong></td>
-              <td>id_agendamento</td>
-              <td>INT</td>
-              <td>PK, AUTO_INCREMENT</td>
-              <td>Identificador único da reserva</td>
-            </tr>
-            <tr>
-              <td>id_cliente</td>
-              <td>INT</td>
-              <td>FK (CLIENTE)</td>
-              <td>Chave estrangeira da cliente</td>
-            </tr>
-            <tr>
-              <td>data_agendada</td>
-              <td>DATE</td>
-              <td>NOT NULL</td>
-              <td>Data escolhida para o atendimento</td>
-            </tr>
-            <tr>
-              <td>status</td>
-              <td>VARCHAR(20)</td>
-              <td>DEFAULT 'Pendente'</td>
-              <td>Status do agendamento</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </footer>
 
   <!-- =====================================================================
        CHATBOT VIRTUAL INTERATIVO (ASSISTENTE JULIANA NAILS)
